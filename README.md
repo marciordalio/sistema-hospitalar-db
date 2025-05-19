@@ -37,5 +37,39 @@ Deseja-se ainda informatizar a receita do médico, de maneira que, no encerramen
 
 
 
-![Diagrama Hospital drawio (2)](https://github.com/user-attachments/assets/b1d7ab27-1276-4e73-a4ff-527c9478e999)
+![Diagrama Hospital drawio](https://github.com/user-attachments/assets/dc8125f5-13f5-41e7-876c-7f93cc8888ea)
+
+# Banco de Dados para um Hospital — Parte 2
+📌 Modelagem Conceitual e Relacional das Internações e Profissionais de Enfermagem
+
+
+📖 Descrição do Projeto
+Esta é a segunda etapa do desenvolvimento do sistema de gestão hospitalar focada na área clínica. Nesta fase, a modelagem do banco de dados foi ampliada para incluir a gestão de internações, quartos, tipos de quartos e profissionais de enfermagem.
+
+Foram incorporados novos requisitos, conforme descrito:
+
+-Registro detalhado das internações, incluindo datas (entrada, prevista de alta, alta efetiva) e procedimentos.
+
+-Associação das internações aos quartos do hospital, com numeração e tipo.
+
+-Tipos de quartos categorizados (apartamento, quarto duplo, enfermaria), cada um com descrição e valor diário.
+
+-Cadastro dos enfermeiros responsáveis pelo acompanhamento dos pacientes durante as internações, contendo nome, CPF e registro COREN.
+
+-Vinculação de cada internação a um paciente e a um médico responsável.
+
+O objetivo é ampliar o sistema, mantendo a integração com as entidades já modeladas na Parte 1 (médicos, pacientes, consultas, receitas), criando uma visão completa da operação clínica do hospital.
+
+# 🚀 Mãos à Obra
+
+📄 **Enunciado da Atividade**
+
+Faça a ligação do diagrama acima ao diagrama desenvolvido na atividade antrior, construindo relacionamentos com entidades relacionadas. E eleve o seu diagrama para que já selecionando os tipos de dados que serão trabalhados e em quais situações. 
+
+Por último, crie um script SQL para a geração do banco de dados e para instruções de montagem de cada uma das entidades/tabelas presentes no diagrama completo (considerando as entidades do diagrama da atividade anterior e as novas entidades propostas no diagrama acima). Também crie tabelas para relacionamentos quando necessário. Aplique colunas e chaves primárias e estrangeiras.
+Use ferramentas, como ERPlus, Lucidchart, draw.io (via web) e MySQL Workbench, ou mesmo um editor de imagens para o diagrama. 
+
+
+![Diagrama Hospital drawio 2 drawio](https://github.com/user-attachments/assets/569edb8d-8f13-41bd-b914-893cf46f0058)
+
 
