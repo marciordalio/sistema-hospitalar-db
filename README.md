@@ -71,5 +71,9 @@ Use ferramentas, como ERPlus, Lucidchart, draw.io (via web) e MySQL Workbench, o
 
 
 ![Diagrama Hospital drawio 2 drawio](https://github.com/user-attachments/assets/569edb8d-8f13-41bd-b914-893cf46f0058)
+![Untitled](https://github.com/user-attachments/assets/0be24ddd-2d2b-4724-ad12-0519f97430e9)
+
+Arquivo MySQL Banco de Dados - Parte 2
+
 
 
