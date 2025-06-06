@@ -335,8 +335,62 @@ UPDATE medico SET em_atividade = FALSE WHERE id_médico IN (3, 5);
 UPDATE medico SET em_atividade = TRUE WHERE id_médico NOT IN (3, 5)
 ```
 
+
+
+
 A tabela medico agora possui a coluna em_atividade, que indica o status profissional de cada médico.
 Essa informação será útil para filtrar médicos disponíveis e manter o sistema hospitalar mais organizado e atualizado.
 
 # Arquivo MySQL: [Arquivo MySQL Banco de Dados - Parte 4](https://github.com/marciordalio/sistema-hospitalar-db-/blob/main/banco_de_dados_MySQL_parte_4.sql)
+
+
+# Parte 5 - Consultas. 
+
+Neste script, implementamos várias consultas SQL para extrair informações relevantes do banco de dados hospitalar. O objetivo é praticar o uso de funções de data, junções, subconsultas e agregações no MySQL.
+
+### Consultas realizadas:
+
+1. **Dados e valor médio das consultas de 2020 feitas com convênio:**  
+   Retorna todas as consultas do ano de 2020 que foram realizadas com convênio, além do valor médio dessas consultas no mesmo período.
+
+2. **Internações com data de alta posterior à data prevista:**  
+   Lista todas as internações cuja data real de alta foi maior que a data prevista para alta.
+
+3. **Receituário completo da primeira consulta com receita registrada:**  
+   Exibe os dados do receituário, os medicamentos associados e seus nomes, referentes à primeira consulta que gerou receita.
+
+4. **Consultas de maior e menor valor sem convênio:**  
+   Retorna as consultas mais caras e as mais baratas feitas sem uso de convênio.
+
+5. **Internações com total da estadia calculado:**  
+   Apresenta as internações, seus quartos, e calcula o custo total da internação multiplicando o valor da diária pelo número de dias de permanência.
+
+6. **Internações em quartos do tipo "apartamento":**  
+   Lista data da internação, procedimento realizado e número do quarto para internações em quartos classificados como “apartamento”.
+
+7. **Consultas de menores de 18 anos fora da especialidade pediatria:**  
+   Retorna nome do paciente, data da consulta e especialidade para pacientes menores de 18 anos, excluindo consultas na especialidade “Pediatria”. Ordena por data da consulta.
+
+8. **Internações feitas por médicos de gastroenterologia em enfermaria:**  
+   Lista nome do paciente, nome do médico, data de internação e procedimento para internações feitas por especialistas em “Gastroenterologia” que ocorreram em quartos do tipo “Enfermaria”.
+
+9. **Quantidade de consultas por médico, com CRM:**  
+   Exibe a lista de médicos com seus CRMs e a quantidade total de consultas realizadas por cada um.
+
+10. **Médicos com “Gabriel” no nome:**  
+    Lista todos os médicos cujo nome contenha “Gabriel”.
+
+11. **Enfermeiros que participaram de mais de uma internação:**  
+    Exibe nome, CRE e número de internações dos enfermeiros que estiveram envolvidos em mais de uma internação.
+
+
+Este exercício é excelente para fixar conceitos de manipulação e análise de dados em bancos relacionais usando SQL.
+
+A tabela medico agora possui a coluna em_atividade, que indica o status profissional de cada médico.
+Essa informação será útil para filtrar médicos disponíveis e manter o sistema hospitalar mais organizado e atualizado.
+
+
+
+# Arquivo MySQL: [Arquivo MySQL Banco de Dados - Parte 5](https://github.com/marciordalio/sistema-hospitalar-db-/blob/main/banco_de_dados_MySQL_parte_4.sql)
+
 
