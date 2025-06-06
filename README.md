@@ -338,5 +338,5 @@ UPDATE medico SET em_atividade = TRUE WHERE id_médico NOT IN (3, 5)
 A tabela medico agora possui a coluna em_atividade, que indica o status profissional de cada médico.
 Essa informação será útil para filtrar médicos disponíveis e manter o sistema hospitalar mais organizado e atualizado.
 
-# Arquivo MySQL: [Arquivo MySQL Banco de Dados - Parte 4](https://github.com/marciordalio/sistema-hospitalar-db-/blob/main/banco_de_dados_MySQL_parte_3.sql)
+# Arquivo MySQL: [Arquivo MySQL Banco de Dados - Parte 4](https://github.com/marciordalio/sistema-hospitalar-db-/blob/main/banco_de_dados_MySQL_parte_4.sql)
 
