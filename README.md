@@ -391,6 +391,6 @@ Essa informação será útil para filtrar médicos disponíveis e manter o sist
 
 
 
-# Arquivo MySQL: [Arquivo MySQL Banco de Dados - Parte 5](https://github.com/marciordalio/sistema-hospitalar-db-/blob/main/banco_de_dados_MySQL_parte_4.sql)
+# Arquivo MySQL: [Arquivo MySQL Banco de Dados - Parte 5](https://github.com/marciordalio/sistema-hospitalar-db-/blob/main/banco_de_dados_MySQL_parte_5.sql.sql)
 
 
