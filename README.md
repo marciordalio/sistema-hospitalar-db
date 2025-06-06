@@ -306,6 +306,36 @@ Os dados foram inseridos no script SQL principal `Base_Hospital.sql`, contendo:
   - Enfermeiros
   - Relacionamentos (enfermeiro_internacao, especialidade_medico, etc)
 
-# 📁 Arquivo principal: [Arquivo MySQL Banco de Dados - Parte 3](https://github.com/marciordalio/sistema-hospitalar-db-/blob/main/banco_de_dados_MySQL_parte_3.sql)
-                    
+# 📁 Arquivo MySQL: [Arquivo MySQL Banco de Dados - Parte 3](https://github.com/marciordalio/sistema-hospitalar-db-/blob/main/banco_de_dados_MySQL_parte_3.sql)
+
+---
+
+# 🩺 Atualização de Dados -Parte 4 - Alterando o banco de dados
+
+Nesta etapa do projeto de banco de dados hospitalar, o foco foi realizar alterações na estrutura e nos dados da tabela `medico`, utilizando comandos de **ALTER TABLE** e **UPDATE**.
+
+
+
+## 🎯 Objetivo da atividade
+
+- Adicionar uma nova coluna chamada `em_atividade` à tabela `medico`, indicando se o profissional ainda está atuando no hospital.
+- Atualizar os registros da tabela para refletir a situação atual de cada médico.
+
+
+## ⚙️ Alterações realizadas
+
+### ✅ 1. Adição de coluna
+
+A seguinte instrução foi utilizada para adicionar a nova coluna `em_atividade`:
+
+```sql
+ALTER TABLE medico ADD COLUMN em_atividade BOOLEAN DEFAULT TRUE;
+
+UPDATE medico SET em_atividade = FALSE WHERE id_médico IN (3, 5);
+UPDATE medico SET em_atividade = TRUE WHERE id_médico NOT IN (3, 5);
+
+A tabela medico agora possui a coluna em_atividade, que indica o status profissional de cada médico.
+Essa informação será útil para filtrar médicos disponíveis e manter o sistema hospitalar mais organizado e atualizado.
+
+# Arquivo MySQL: [Arquivo MySQL Banco de Dados - Parte 4](https://github.com/marciordalio/sistema-hospitalar-db-/blob/main/banco_de_dados_MySQL_parte_3.sql)
 
