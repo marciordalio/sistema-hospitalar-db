@@ -332,7 +332,8 @@ A seguinte instrução foi utilizada para adicionar a nova coluna `em_atividade`
 ALTER TABLE medico ADD COLUMN em_atividade BOOLEAN DEFAULT TRUE;
 
 UPDATE medico SET em_atividade = FALSE WHERE id_médico IN (3, 5);
-UPDATE medico SET em_atividade = TRUE WHERE id_médico NOT IN (3, 5);
+UPDATE medico SET em_atividade = TRUE WHERE id_médico NOT IN (3, 5)
+```
 
 A tabela medico agora possui a coluna em_atividade, que indica o status profissional de cada médico.
 Essa informação será útil para filtrar médicos disponíveis e manter o sistema hospitalar mais organizado e atualizado.
