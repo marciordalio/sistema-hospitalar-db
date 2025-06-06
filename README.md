@@ -306,5 +306,6 @@ Os dados foram inseridos no script SQL principal `Base_Hospital.sql`, contendo:
   - Enfermeiros
   - Relacionamentos (enfermeiro_internacao, especialidade_medico, etc)
 
-📁 Arquivo principal: `Base_Hospital.sql`
+# 📁 Arquivo principal: [Arquivo MySQL Banco de Dados - Parte 3](https://github.com/marciordalio/sistema-hospitalar-db-/blob/main/banco_de_dados_MySQL_parte_3.sql)
+                    
 
