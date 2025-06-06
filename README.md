@@ -239,9 +239,72 @@ Registra as internações hospitalares.
 
 Dados dos enfermeiros.
 
+
 | Campo         | Tipo         | Descrição                         |
 |---------------|--------------|------------------------------------|
 | id_enfermeiro | int [PK]     | Identificador do enfermeiro        |
 | nome          | varchar(255) | Nome completo                      |
 | cpf           | varchar(14)  | CPF                                |
 | coren         | varchar(20)  | Registro no Conselho de Enfermagem |
+
+---
+
+
+
+# Banco de Dados para um Hospital — Parte 3
+
+# 🏥 De que serve o banco sem dados? Então vamos alimentar o banco!
+
+Com a estrutura do banco de dados do sistema hospitalar finalizada, chegou a hora de realizar o **povoamento inicial**, garantindo que todas as tabelas estejam devidamente preenchidas para possibilitar testes e validações no sistema.
+
+Nesta etapa, desenvolvemos **scripts SQL completos para inserção de dados** nas tabelas criadas anteriormente, seguindo regras específicas e exigências funcionais que garantem a veracidade e funcionalidade do sistema hospitalar simulado.
+
+
+## ✅ Objetivos da atividade
+  📄 **Enunciado da Atividade**
+- Criar **scripts de inserção (INSERT)** para as tabelas do banco de dados.
+- Garantir que os dados sejam consistentes e reflitam uma estrutura hospitalar realista.
+- Separar os scripts iniciais obrigatórios para o funcionamento do sistema desde a sua instalação.
+
+
+
+## 📋 Requisitos atendidos
+
+- [x] Inserção de **10 médicos** com diferentes especialidades.
+- [x] Cadastro de **7 especialidades** médicas (incluindo: Pediatria, Clínica Geral, Gastrenterologia e Dermatologia).
+- [x] Registro de **15 pacientes** distintos.
+- [x] Registro de **20 consultas**, com:
+  - Datas entre **01/01/2015 e 01/01/2022**.
+  - Pacientes com múltiplas consultas.
+  - **10 consultas com receituários** contendo **2 ou mais medicamentos**.
+- [x] Cadastro de **4 convênios médicos**, associados a pelo menos **5 pacientes** e **5 consultas**.
+- [x] Criação de:
+  - Relacionamento entre **médicos e especialidades**.
+  - Relacionamento entre **internações e enfermeiros**.
+- [x] Correções nas **chaves estrangeiras** (ex: entre convênio e médico, internação e enfermeiro, etc).
+- [x] Inclusão de **7 internações**, com:
+  - Dois pacientes internados mais de uma vez.
+  - Ocorrências entre **2015 e 2022**.
+- [x] Cadastro de **3 tipos de quartos** com valores distintos (apartamento, quarto duplo e enfermaria).
+- [x] Inserção de **10 enfermeiros**, com **dupla associação por internação**.
+
+## 📂 Arquivos incluídos
+Os dados foram inseridos no script SQL principal `Base_Hospital.sql`, contendo:
+
+- Criação de todas as tabelas e relacionamentos com `FOREIGN KEY`.
+- Inserções de dados (`INSERT INTO`) para todas as entidades:
+  - Médicos
+  - Especialidades
+  - Pacientes
+  - Endereços
+  - Consultas
+  - Receitas
+  - Medicamentos
+  - Convênios
+  - Quartos e tipos de quarto
+  - Internações
+  - Enfermeiros
+  - Relacionamentos (enfermeiro_internacao, especialidade_medico, etc)
+
+📁 Arquivo principal: `Base_Hospital.sql`
+
