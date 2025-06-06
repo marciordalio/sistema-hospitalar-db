@@ -60,7 +60,7 @@ Foram incorporados novos requisitos, conforme descrito:
 
 O objetivo é ampliar o sistema, mantendo a integração com as entidades já modeladas na Parte 1 (médicos, pacientes, consultas, receitas), criando uma visão completa da operação clínica do hospital.
 
-# 🚀 Mãos à Obra
+# 🚀 Mãos à Obra  Mãos à Obra
 
 📄 **Enunciado da Atividade**
 
@@ -251,7 +251,7 @@ Dados dos enfermeiros.
 
 
 
-# Banco de Dados para um Hospital — Parte 3
+# Banco de Dados para um Hospital — Parte 3 Alimentando o banco de dados
 
 # 🏥 De que serve o banco sem dados? Então vamos alimentar o banco!
 
